@@ -27,7 +27,6 @@ font-family: 'Fraunces', serif;
 
 body {
     background-color: var(--cream);
-    min-height: 100vh;
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     color: var(--dark-grayish-blue);
@@ -51,7 +50,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .card {
