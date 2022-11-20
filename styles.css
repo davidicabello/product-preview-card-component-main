@@ -43,6 +43,10 @@ h2 {
     color: var(--dark-cyan);
 }
 
+p {
+    line-height: 1.2rem;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -73,7 +77,7 @@ h2 {
 .productDescription {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 30px;
     margin: 0 auto;
 }
 
@@ -83,10 +87,18 @@ h2 {
     font-size: 2rem;
 }
 
+.prices {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .addToCartButton {
-    margin-top: 50px;
-    height: 60px;
+    margin-top: 5px;
+    height: 50px;
     width: 100%;
+    font-weight: bold;
     color: var(--white);
     background-color: var(--dark-cyan);
     font-family: 'Montserrat', sans-serif;
@@ -95,6 +107,10 @@ h2 {
     outline: none;
     border: none;
     border-radius: 10px;
+}
+
+.addToCartButton:hover {
+    background-color: var(--very-dark-blue);
 }
 
 @media only screen and (max-width: 600px) {
@@ -108,6 +124,10 @@ h2 {
         margin-bottom: 10px;
     }
 
+    p {
+        max-width: 290px;
+    }
+
     .prices {
         display: flex;
         align-items: center;
@@ -116,9 +136,11 @@ h2 {
     }
 
     .productImage img {
+        content: url("images/image-product-mobile.jpg");
         width: 100%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        height: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         border-bottom-left-radius: 0px;
     }
 }
